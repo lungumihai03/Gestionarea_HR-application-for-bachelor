@@ -1,0 +1,52 @@
+<Page
+    x:Class="Gestionarea_HR.Concedii"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Gestionarea_HR"
+    xmlns:controls="using:CommunityToolkit.WinUI.UI.Controls">
+
+    <Grid Padding="20">
+        <StackPanel Orientation="Vertical" Spacing="10">
+
+            <TextBox x:Name="SearchBox" PlaceholderText="Caută angajat..." TextChanged="SearchBox_TextChanged"/>
+
+            <controls:DataGrid 
+                x:Name="EmployeeDataGrid" 
+                AutoGenerateColumns="False" 
+                MaxHeight="300" 
+                ScrollViewer.VerticalScrollBarVisibility="Auto" 
+                Visibility="Visible"
+                SelectionChanged="EmployeeDataGrid_SelectionChanged">
+                <controls:DataGrid.Columns>
+                    <controls:DataGridTextColumn Header="Employee ID" Binding="{Binding EmployeeId}" />
+                    <controls:DataGridTextColumn Header="Nume" Binding="{Binding Name3}" />
+                    <controls:DataGridTextColumn Header="Prenume" Binding="{Binding Name1}" />
+                    <controls:DataGridTextColumn Header="Patronimic" Binding="{Binding Name2}" />
+                </controls:DataGrid.Columns>
+            </controls:DataGrid>
+
+            <controls:DataGrid 
+                x:Name="HolidayDataGrid" 
+                AutoGenerateColumns="False" 
+                MaxHeight="300" 
+                ScrollViewer.VerticalScrollBarVisibility="Auto" 
+                Visibility="Visible">
+                <controls:DataGrid.Columns>
+                    <controls:DataGridTextColumn Header="Employee ID" Binding="{Binding EmployeeId}" />
+                    <controls:DataGridTextColumn Header="Nume" Binding="{Binding Name3}" />
+                    <controls:DataGridTextColumn Header="Prenume" Binding="{Binding Name1}" />
+                    <controls:DataGridTextColumn Header="Tip Concediu" Binding="{Binding TipConcediu}" />
+                    <controls:DataGridTextColumn Header="Data Început" Binding="{Binding DataInceput}" />
+                    <controls:DataGridTextColumn Header="Data Sfârșit" Binding="{Binding DataSfarsit}" />
+                </controls:DataGrid.Columns>
+            </controls:DataGrid>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Spacing="10">
+                <Button Content="Adaugă Concediu" Click="AddHoliday_Click"/>
+                <Button Content="Exportă în Excel" Click="ExportToExcel_Click"/>
+                <Button Content="Refresh" Click="Refresh_Click"/>
+            </StackPanel>
+
+        </StackPanel>
+    </Grid>
+</Page>

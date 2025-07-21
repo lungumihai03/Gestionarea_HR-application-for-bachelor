@@ -1,0 +1,60 @@
+<Page
+    x:Class="Gestionarea_HR.AdminPanelPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid>
+        
+        <NavigationView x:Name="NavigationMenu" PaneTitle="Panou" SelectionChanged="NavigationMenu_SelectionChanged">
+            <NavigationView.MenuItems>
+                <NavigationViewItem Content="Gestionare utilizatori" Icon="AddFriend" Tag="CreateUserPage"/>
+                <NavigationViewItem Content="MyHR" Icon="People" Tag="MyHRPage">
+                    <NavigationViewItem.MenuItems>
+                        <NavigationViewItem Content="Angajează" Icon="Contact" ToolTipService.ToolTip="Adaugă un angajat nou" Tag="HirePage"/>
+                        <NavigationViewItem Content="Vizualizare angajați" Icon="People" ToolTipService.ToolTip="Lista angajaților" Tag="ViewEmployeePage"/>
+                        <NavigationViewItem Content="Fișa Angajat" Icon="Contact2" ToolTipService.ToolTip="Vizualizarea fișei unui angajat" Tag="FisaAngajat"/>
+                        <NavigationViewItem Content="Concedii" Icon="Calendar" ToolTipService.ToolTip="Gestionarea concediilor" Tag="LeavePage"/>
+                        
+                    </NavigationViewItem.MenuItems>
+                </NavigationViewItem>
+                    <NavigationViewItem Content="Salarizare" Tag="SalaryPage">
+                    <NavigationViewItem.Icon>
+                        <FontIcon Glyph="&#xE825;" />
+                    </NavigationViewItem.Icon>
+                    <NavigationViewItem.MenuItems>
+                        <NavigationViewItem Content="Calcul salarial" Icon="Calculator" ToolTipService.ToolTip="Calculăm salariul la un angajat" Tag="CalculSalarial"/>
+                        <NavigationViewItem Content="Fluturași" Icon="Document" ToolTipService.ToolTip="Generarea fluturașilor pentru un angajat" Tag="Fluturasi"/>
+                        <NavigationViewItem Content="Raport Salarial" ToolTipService.ToolTip="Generarea raportului salarial pentru un angajat" Tag="RaportSalarial">
+                            <NavigationViewItem.Icon>
+                                <FontIcon Glyph="&#xE9F9;" />
+                            </NavigationViewItem.Icon>
+                        </NavigationViewItem>
+                    </NavigationViewItem.MenuItems>
+                </NavigationViewItem>
+
+                <NavigationViewItemSeparator/>
+                <NavigationViewItem Content="Logout" Tag="Logout">
+                    <NavigationViewItem.Icon>
+                        <FontIcon Glyph="&#xE8AC;" />
+                    </NavigationViewItem.Icon>
+                </NavigationViewItem>
+
+                <NavigationViewItem Content="Iesire" Tag="Exit">
+                    <NavigationViewItem.Icon>
+                        <FontIcon Glyph="&#xE7E8;" />
+                    </NavigationViewItem.Icon>
+                </NavigationViewItem>
+
+
+            </NavigationView.MenuItems>
+
+            <Frame x:Name="ContentFrame">
+                
+            </Frame>
+
+        </NavigationView>
+    </Grid>
+</Page>

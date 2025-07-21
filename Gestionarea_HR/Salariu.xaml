@@ -1,0 +1,40 @@
+<Page
+    x:Class="Gestionarea_HR.Salariu"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Gestionarea_HR"
+    >
+
+    <Grid Padding="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="0" Margin="0,0,0,10">
+            <TextBlock Text="Fisier pontaj" VerticalAlignment="Center" Margin="0,0,10,0"/>
+            <TextBox x:Name="textBox_pontaj" Width="200" IsReadOnly="True"/>
+            <Button Content="Browse" Click="Button_Pontaj_Click" Margin="10,0,0,0"/>
+            <Button Content="Import" Click="Button_Import_Click" Margin="10,0,0,0"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="1" Margin="0,0,0,10">
+            <Button Content="Calculeaza" Click="Button_Calcul_Click"/>
+            
+        </StackPanel>
+
+        <StackPanel Grid.Row="2">
+            <TextBlock x:Name="label_10" />
+            <TextBlock x:Name="label_SN" Text="Salariul net" />
+            <TextBlock x:Name="label_salary" Text="Salariul de baza" />
+            <TextBlock x:Name="label_SP" Text="Scutire Personala (SP)" />
+            <TextBlock x:Name="label_SC" Text="Scutire pe copii (SC)" />
+            <TextBlock x:Name="label_ST" Text="Scutiri total (ST)" />
+            <TextBlock x:Name="label_IV" Text="Impozit pe Venit (IV)" />
+            <TextBlock x:Name="label_MED" Text="Impozit pe medicina (MED)" />
+            <TextBlock x:Name="label_TCS" Text="Total Contributii Salariat" />
+            <TextBlock x:Name="label_SB" Text="Salariul brut" />
+        </StackPanel>
+    </Grid>
+</Page>

@@ -1,0 +1,36 @@
+<Page
+    x:Class="Gestionarea_HR.UserManagementPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="using:CommunityToolkit.WinUI.UI.Controls"
+    mc:Ignorable="d">
+
+    <Grid Padding="20">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <controls:DataGrid x:Name="UsersDataGrid" AutoGenerateColumns="False" SelectionChanged="UsersDataGrid_SelectionChanged">
+            <controls:DataGrid.Columns>
+                <controls:DataGridTextColumn Header="Login" Binding="{Binding Login}" />
+                <controls:DataGridTextColumn Header="Rights" Binding="{Binding Rights}" />
+                <controls:DataGridTextColumn Header="One Time Password" Binding="{Binding OneTimePassword}" />
+            </controls:DataGrid.Columns>
+        </controls:DataGrid>
+        <StackPanel Grid.Column="1" Margin="20,0,0,0">
+            <TextBox x:Name="LoginTextBox" Header="Login" TextChanged="FieldsChanged" />
+            <PasswordBox x:Name="PasswordBox" Header="Parola" PasswordChanged="FieldsChanged" />
+            <ComboBox x:Name="AccessRightsComboBox" Header="Drepturi de acces" SelectionChanged="FieldsChanged" Margin="0,10">
+                <ComboBoxItem Content="Admin" />
+                <ComboBoxItem Content="Accountant-Salary" />
+                <ComboBoxItem Content="Recruiter" />
+                <ComboBoxItem Content="Director" />
+            </ComboBox>
+            <Button x:Name="AddUserButton" Content="Adaugă utilizator" Click="AddUserButton_Click" IsEnabled="False" Margin="0,10" />
+            <Button x:Name="DeleteUserButton" Content="Șterge utilizator" Click="DeleteUserButton_Click" IsEnabled="False" Margin="0,10" />
+        </StackPanel>
+    </Grid>
+</Page>

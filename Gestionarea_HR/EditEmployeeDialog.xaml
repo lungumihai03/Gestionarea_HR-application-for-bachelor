@@ -1,0 +1,35 @@
+<ContentDialog
+    x:Class="Gestionarea_HR.EditEmployeeDialog"
+    Title="Editare Angajat"
+    PrimaryButtonText="Salvează"
+    CloseButtonText="Anulează"
+    DefaultButton="Primary"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Gestionarea_HR">
+
+    <ScrollViewer VerticalScrollMode="Enabled" Height="400">
+        <StackPanel Spacing="10">
+            <TextBox x:Name="Name3TextBox" Header="Nume"/>
+            <TextBox x:Name="Name1TextBox" Header="Prenume"/>
+            <TextBox x:Name="Name2TextBox" Header="Patronimic"/>
+            
+            <TextBox x:Name="PhoneTextBox" Header="Telefon"/>
+            <DatePicker x:Name="BirthdatePicker" Header="Data nașterii"/>
+            <DatePicker x:Name="HiredatePicker" Header="Data angajării"/>
+            <ComboBox x:Name="SpecialityTextBox" Header="Specialitate"/>
+            <TextBox x:Name="SalaryTextBox" Header="Salariu" InputScope="Number"/>
+            <ComboBox x:Name="EducationTextBox" Header="Educație"/>
+            <TextBox x:Name="ChildrenTextBox" Header="Număr copii" InputScope="Number"/>
+            <TextBox x:Name="MarriedTextBox"/>
+            <ComboBox x:Name="DepartTextBox" Header="Departament"/>
+            <TextBox x:Name="OrdinTextBox" Header="Ordin"/>
+            <TextBox x:Name="FailOrdinTextBox" Header="Ordin concediere"/>
+            <DatePicker x:Name="FaildatePicker" Header="Data concedierii"/>
+            <TextBox x:Name="ContractNrTextBox" Header="Nr. contract"/>
+            <DatePicker x:Name="ContractDatePicker" Header="Data contract"/>
+            <TextBox x:Name="CNPTextBox" Header="CNP"/>
+            <TextBox x:Name="CPASTextBox" Header="CPAS"/>
+        </StackPanel>
+    </ScrollViewer>
+</ContentDialog>

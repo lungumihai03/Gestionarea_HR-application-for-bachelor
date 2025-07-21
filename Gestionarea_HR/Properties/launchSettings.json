@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Gestionarea_HR (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "Gestionarea_HR (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
