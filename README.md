@@ -16,21 +16,29 @@ The application is divided into three main modules:
      
      <img title="" src="photo/1.png" alt="loading-ag-1772" data-align="center" style="zoom:80%;">
    
-   * **Leave Management**: Track employee leaves (e.g., vacation, medical, unpaid) and generate reports exportable to Excel. <img title="" src="photo/2.png" alt="06a49ccd-90ee-4408-9d9f-4aac80ea2e2d" style="zoom:80%;" data-align="center"><img title="" src="photo/3.png" alt="loading-ag-1777" style="zoom:80%;" data-align="center">
+   * **Leave Management**: Track employee leaves (e.g., vacation, medical, unpaid) and generate reports exportable to Excel. 
+   <img title="" src="photo/2.png" alt="06a49ccd-90ee-4408-9d9f-4aac80ea2e2d" style="zoom:80%;" data-align="center">
+   <img title="" src="photo/3.png" alt="loading-ag-1777" style="zoom:80%;" data-align="center">
 
 2. **Payroll Management**:
    
-   * **Salary Calculation**: Import timesheet data from Excel files, calculate salaries based on Moldova's April 2025 tax regulations, and store results in the database. <img title="" src="photo/4.png" alt="loading-ag-1779" data-align="center" style="zoom:80%;">
+   * **Salary Calculation**: Import timesheet data from Excel files, calculate salaries based on Moldova's April 2025 tax regulations, and store results in the database. 
+   <img title="" src="photo/4.png" alt="loading-ag-1779" data-align="center" style="zoom:80%;">
    
-   * **Payslip Generation**: Generate and export payslips for employees, providing detailed salary breakdowns. <img title="" src="photo/5.png" alt="loading-ag-1781" data-align="center" style="zoom:80%;">
+   * **Payslip Generation**: Generate and export payslips for employees, providing detailed salary breakdowns. 
+   <img title="" src="photo/5.png" alt="loading-ag-1781" data-align="center" style="zoom:80%;">
    
-   * **Payroll Reports**: Create and export detailed payroll reports for selected employees and time periods. <img title="" src="photo/6.png" alt="loading-ag-1783" data-align="center" style="zoom:80%;">
+   * **Payroll Reports**: Create and export detailed payroll reports for selected employees and time periods. 
+   <img title="" src="photo/6.png" alt="loading-ag-1783" data-align="center" style="zoom:80%;">
 
 3. **User Management**:
    
-   * Available only to administrators, this module allows creating, viewing, and deleting user accounts with role-based access (Administrator, Director, HR, Accountant). <img title="" src="photo/7.png" alt="loading-ag-1785" data-align="center" style="zoom:80%;">
+   * Available only to administrators, this module allows creating, viewing, and deleting user accounts with role-based access (Administrator, Director, HR, Accountant). 
+   <img title="" src="photo/7.png" alt="loading-ag-1785" data-align="center" style="zoom:80%;">
    
-   * Implements secure password policies, including one-time passwords for new users and complexity requirements (minimum 8 characters, including uppercase, lowercase, and digits). <img title="" src="photo/8.png" alt="ebb8f2f2-90f9-4179-bba0-bed1bd23375b" data-align="center" style="zoom:80%;"><img title="" src="photo/9.png" alt="loading-ag-1793" data-align="center" style="zoom:80%;">
+   * Implements secure password policies, including one-time passwords for new users and complexity requirements (minimum 8 characters, including uppercase, lowercase, and digits). 
+   <img title="" src="photo/8.png" alt="ebb8f2f2-90f9-4179-bba0-bed1bd23375b" data-align="center" style="zoom:80%;">
+   <img title="" src="photo/9.png" alt="loading-ag-1793" data-align="center" style="zoom:80%;">
 
 Technologies Used
 -----------------
@@ -70,7 +78,9 @@ The application uses a MySQL database named "employee" with the following tables
 
 * **Users**: Manages user credentials and access rights.
 
-* **Cale_salariu**: Stores tax and exemption rates. <img title="" src="photo/11.png" alt="004494b0-312d-4d17-8f07-1420c04dc417" data-align="center" style="zoom:80%;"><img title="" src="photo/12.png" alt="loading-ag-1799" data-align="center" style="zoom:80%;">
+* **Cale_salariu**: Stores tax and exemption rates. 
+<img title="" src="photo/11.png" alt="004494b0-312d-4d17-8f07-1420c04dc417" data-align="center" style="zoom:80%;">
+<img title="" src="photo/12.png" alt="loading-ag-1799" data-align="center" style="zoom:80%;">
 
 Installation
 ------------
